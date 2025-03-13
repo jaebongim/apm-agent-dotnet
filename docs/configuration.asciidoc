@@ -1372,6 +1372,20 @@ you must instead set the `LogLevel` for the internal APM logger under the `Loggi
 | `Error`                 | String
 |============
 
+[[config-log-directory]]
+==== `LogDirectory`
+
+When ELASTIC_APM_LOG_DIRECTORY is set, even with another logging provider (e.g., ILogger) enabled, we should consider whether we also log to a file in this directory
+
+
+[options="header"]
+|============
+| Environment variable name | IConfiguration or Web.config key
+| `ELASTIC_APM_LOG_DIRECTORY`   | `ElasticApm:LogDirectoryu`
+|============
+
+
+
 [[config-all-options-summary]]
 === All options summary
 
